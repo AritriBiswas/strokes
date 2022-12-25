@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import LandingPage from "./page/LandingPage/LandingPage"
+import TeamsPage from './page/TeamsPage/TeamsPage';
+import Gallery from './page/Gallery/Gallery';
+import EventsPage from './page/EventsPage/EventsPage';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <section
+            // style={{
+            //   background: "url('../public/main_bg.jpeg')",
+            //   height: "100vh",
+            //   width: "auto",
+            //   backgroundRepeat: "no-repeat",
+            //   padding: "none",
+            //   color: "aliceblue"
+            // }}
         >
-          Learn React
-        </a>
-      </header>
+    <div className='main_container'>
+      <BrowserRouter>
+        <Navbar/>
+
+        <Routes>
+          <Route path="/" element={<LandingPage/>} />
+          <Route path="/OurTeam" element={<TeamsPage/>} />
+          <Route path="/Gallery" element={<Gallery/>} />
+          <Route path="/OurEvents" element={<EventsPage/>} />
+
+
+          
+        </Routes>
+
+      </BrowserRouter>
     </div>
+    </section>
   );
 }
 
