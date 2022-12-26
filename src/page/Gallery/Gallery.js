@@ -2,7 +2,7 @@ const record=[
     {
         "id":1,
         "captions": "Icon1",
-        "icon": "Assets/Events/C1.jpg"   
+        "icon": "Assets/Events/C4.jpg"   
     },
     {   "id":2,
     "captions": "Icon2",

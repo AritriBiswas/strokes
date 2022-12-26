@@ -6,12 +6,15 @@ import LandingPage from "./page/LandingPage/LandingPage"
 import TeamsPage from './page/TeamsPage/TeamsPage';
 import RGallery from './page/Gallery/RGallery';
 import EventsPage from './page/EventsPage/EventsPage';
+import AlumniPage from "./page/AlumniPage/AlumniPage";
 
 
 
 
 
 function App() {
+
+  
   return (
     <section
             // style={{
@@ -23,22 +26,32 @@ function App() {
             //   color: "aliceblue"
             // }}
         >
-    <div className='main_container'>
+    
       <BrowserRouter>
-        <Navbar/>
-
+      
+      
         <Routes>
           <Route path="/" element={<LandingPage/>} />
+        </Routes>
+        
+
+          {/* <div className='main_container'>
+        <Navbar/>
+        </div> */}
+
+         <Routes>
+
           <Route path="/OurTeam" element={<TeamsPage/>} />
           <Route path="/Gallery" element={<RGallery/>} />
           <Route path="/OurEvents" element={<EventsPage/>} />
+          <Route path="/OurAlumni" element={<AlumniPage/>} />
 
 
           
         </Routes>
 
       </BrowserRouter>
-    </div>
+    
     </section>
   );
 }

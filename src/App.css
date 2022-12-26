@@ -1,8 +1,9 @@
 /* .main_container{
-  background-image: url('../public/main_bg.jpeg');
+  background-image: url('./page/LandingPage/main_bg.jpeg');
   height: 100vh;
   width: auto;
   background-repeat: no-repeat;
   padding: none;
   color: aliceblue;
+  z-index: -1;
 } */

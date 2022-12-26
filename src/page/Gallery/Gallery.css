@@ -1,8 +1,37 @@
-.box{
+/* .box{
     background-image: url("../../Assets/Events/C1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80% 80%;
     height: 100vh;
     width:auto;
+} */
+
+.box2{
+    height:12rem;
+}
+
+.card2{
+    height:12rem;
+}
+
+.CatagoryButton{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 3rem 0rem 0rem 0rem;
+    border: none;
+}
+
+.btn{
+    padding: 1rem;
+    border-radius: 5rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.heading{
+    margin:auto;
+    text-align: center;
+    font-size: 4rem;
 }

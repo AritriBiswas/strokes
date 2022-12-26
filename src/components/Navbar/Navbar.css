@@ -12,9 +12,11 @@ li{
 .nav_text{
     text-decoration: none;
     display: flex;
-    color: black;
+    color:white;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
+    position: static;
     
 
 }
@@ -26,5 +28,19 @@ li{
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+    background-color: rgba(0, 0, 0, 0.658);
+    /* filter: blur(2px); */
+    position: static;
+}
+
+.line{
+    background-color: rgb(255, 255, 255);
+    width:100vw;
+    height:0.04rem;
+}
+
+#id{
+    display:flex;
+    align-items: center;
+
 }

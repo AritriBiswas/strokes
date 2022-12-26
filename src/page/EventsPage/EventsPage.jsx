@@ -1,15 +1,10 @@
 import React from 'react'
-
+import Navbar from "../../components/Navbar/Navbar";
 export default function EventsPage() {
   return (
-    <section
-    //   style={{
-    //             backgroundSize: "cover",
-    //             backgroundRepeat: "no-repeat",
-    //             height: "100vh",
-    //         }}
-    >
-        Eventspage
-   </section>
+    <>
+    <Navbar/>
+    <div>Eventspage</div>
+    </>
   )
 }

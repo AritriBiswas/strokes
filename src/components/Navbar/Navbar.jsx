@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
+import logo from "./strokes_logo.jpg"
 
 export default function Navbar() {
   return (
     <div>
+      
       <ul className='navList'>
+      <Link className='nav_text' id="logo" to="/">
+      <img style={{"height":"1.5rem"}} src={logo} alt="logo"/>
+      </Link>
+
               <li>
                   <Link className='nav_text' to="/">Home</Link>
               </li>
@@ -20,8 +26,13 @@ export default function Navbar() {
                   <Link className='nav_text' to="/OurEvents">Our Events</Link>
               </li>
 
+              <li>
+                  <Link className='nav_text' to="/OurAlumni">Our Alumni</Link>
+              </li>
+
         
           </ul>
+          {/* <div className='line'></div> */}
         
 
     </div>
