@@ -5,7 +5,7 @@ import logo from "./strokes_logo.jpg"
 
 export default function Navbar() {
   return (
-    <div>
+    <div className='mainNav'>
       
       <ul className='navList'>
       <Link className='nav_text' id="logo" to="/">

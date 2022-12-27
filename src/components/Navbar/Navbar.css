@@ -21,6 +21,10 @@ li{
 
 }
 
+.mainNav{
+    backdrop-filter: blur(4px);
+}
+
 
 .navList{
     text-decoration: none;
@@ -28,7 +32,7 @@ li{
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: flex-start;
-    background-color: rgba(0, 0, 0, 0.658);
+    /* background-color: rgba(0, 0, 0, 0.658); */
     /* filter: blur(2px); */
     position: static;
 }

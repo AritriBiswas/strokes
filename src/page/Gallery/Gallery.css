@@ -18,7 +18,7 @@
 .CatagoryButton{
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     margin: 3rem 0rem 0rem 0rem;
     border: none;
 }
@@ -34,4 +34,5 @@
     margin:auto;
     text-align: center;
     font-size: 4rem;
+    color: white;
 }
