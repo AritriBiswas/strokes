@@ -24,16 +24,16 @@ export default function Gallery() {
 
 </div>
 
-<div className='dispaly'>
+<div className='display'>
   {
     Records && Records.map( (record) => {
-      const{icon} = record;
+      const{icon,id} = record;
       return(
-        <div className='box' >
-          <img className="card" src={icon} alt="card" />
-          <br/>
+        
+          <img className={id} src={icon} alt="card" />
           
-          </div>
+          
+        
       )
     })
   }

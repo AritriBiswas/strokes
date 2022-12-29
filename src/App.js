@@ -7,6 +7,7 @@ import TeamsPage from './page/TeamsPage/TeamsPage';
 import RGallery from './page/Gallery/RGallery';
 import EventsPage from './page/EventsPage/EventsPage';
 import AlumniPage from "./page/AlumniPage/AlumniPage";
+import Photography from "./page/Photography/Photography";
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Route path="/Gallery" element={<RGallery/>} />
           <Route path="/OurEvents" element={<EventsPage/>} />
           <Route path="/OurAlumni" element={<AlumniPage/>} />
+          <Route path="/Photography" element={<Photography/>} />
 
 
           

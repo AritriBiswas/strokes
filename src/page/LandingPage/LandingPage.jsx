@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import "./LandingPage.css"
 import Records from "./Eventcovers"
 import Navbar from "../../components/Navbar/Navbar"
@@ -10,9 +10,23 @@ import Records2 from "./LatestEvents"
 import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTransition, animated } from 'react-spring';
 
 
 export default function LandingPage() {
+  const [isVisible, setIsVisible] = useState(true);
+  const transition = useTransition(isVisible, {
+    from: {x:-100,y:0, opacity:-1},
+    enter: {x:0,y:0, opacity:1},
+    leave: {x:100,y:800, opacity:-1},
+  })
+
+  const transition_of_hero = useTransition( isVisible,{
+    from: {x:0,y:0, opacity:1},
+    enter: {x:0,y:0, opacity:1},
+    leave: {x:0,y:100, opacity:1},
+  })
+
   // function showMoreEvents(){
   //   console.log("clicked")
 
@@ -40,26 +54,41 @@ export default function LandingPage() {
 
   return (
     <>
-      <section className='landingpage'>
-         
-      
-        <Navbar/>
-        {/* <div className='about'>
-            <span className='box3' data-aos="fade-right"><img src={icon1} alt="image" className='image'/>Photography</span>
-            <span className='box3' data-aos="fade-right"><img src={icon2} alt="image" className='image'/>Graphic Design</span>
-            <span className='box3' data-aos="fade-right"><img src={icon3} alt="image" className='image'/>Art</span>
-            <span className='box3' data-aos="fade-right"><img src={icon4} alt="image" className='image'/>Content Writing</span>
-        </div> */}
+    <Navbar/>
+      <section className='landingpage' onWheel={(e) =>{
+            
+        
+            if(e.deltaY > 0){
+              console.log("here",e.deltaY);
+              {transition_of_hero((style,item) => 
+                // <animated.div style={style} className='landingpage'/> 
+                item ?"": <animated.div style={style} className='landingpage'/>  )
+              }
+            }
+            else if(e.deltaY<0){
+
+              {transition_of_hero((style,item) => 
+                item ? "" : <animated.div style={style} className='landingpage'/>  )
+              }
+
+            }
+            setIsVisible(v => !v);
+          }}>
+        
+        
       </section>
 
 
         <div className='who_we_are'>
-          <div className='inner1' data-aos="fade-right" data-aos-duration="1000">
-            <div className='inner2'>
-              <div className='inner3'>
-                <h1 className='title'>Who We Are</h1>
-                <p className='text'>The basis of all sorts of art is imagination. The level of expression of imagination defines the beauty of Art. Gestures could not be defined if it had never been noticed. The work of Photographer is to define the iconic gestures. Its like a whole new category in Modern Art. STROKES- the club of Art and Photography presents before you the game of Rangbaazs. Stay colorful</p>
-              </div>
+          <div className='inner1' onWheel={() =>{
+            setIsVisible(v => !v);
+          }}>
+            <div className='inner2' onWheel={() =>{
+            setIsVisible(v => !v);
+          }}>
+              {transition((style,item) => 
+                item ? "" : <animated.div style={style} className='inner3'/>  )
+              }
             </div>
           </div>
         </div>
