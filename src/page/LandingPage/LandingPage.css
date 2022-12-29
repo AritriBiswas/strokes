@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80% 80%;
-    height: 85vh;
+    height: 100vh;
     width:auto;
     color:white;
     margin:-16px -16px 0px 0px;
@@ -17,8 +17,8 @@
 
 .events{
     text-align: center;
-    font-size: 4rem;
-    margin:2rem 0rem 0rem 0rem;
+    font-size: 6rem;
+    margin: -9rem 8rem 3rem -30rem;
     color:white;
     
 }
@@ -28,23 +28,40 @@
 }
 
 .who_we_are{
-    background-color: rgb(255 255 255 / 34%);
-    height: 42rem;
+    /* background-image:url("./whowearebg1.png"); */
+    height: 100vh;
     width: auto;
-    margin: -1.5rem 17rem 0rem 17rem;
-    border-radius: 3rem;
+    /* margin: -1.5rem 17rem 0rem 17rem; */
+    /* border-radius: 3rem; */
 
     /* background-image: url("../../../public/Assets/Mandala.png");
     background-size: cover;
     background-repeat: no-repeat; */
+    margin: -6rem 0rem 12rem 0rem;
 }
 
-.title{
-    text-align: center;
-    font-size: 4rem;
-    color: white;
-    padding: 11rem 0rem 0rem 0rem;
+.inner1{
+    background-image: url("./whowearebg1.png");
+    height:100vh;
+    
 }
+
+.inner2{
+    background-image: url("./rectangle.png");
+    height:106vh;
+}
+
+.inner3{
+    background-image: url("./girl.png");
+    height:118vh;
+}
+.title{
+    font-size: 8rem;
+    text-align: right;
+    color: black;
+    padding: 12rem 15rem 0rem 0rem;
+}
+
 
 .card{
     height: 17rem;
@@ -53,7 +70,7 @@
 
 .eventCovers{
     display: flex;
-    margin: 2rem 9rem 9rem 9rem;
+    margin: 2rem 0rem 0rem 0rem;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -70,7 +87,7 @@
 .about{
     display: flex;
     /* background-color: brown; */
-    margin: 30rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
     height: 8rem;
     justify-content: center;
    
@@ -79,9 +96,10 @@
 }
 
 .text{
-    color: white;
-    margin: 7rem 6rem -20rem 41rem;
-    font-size: 1.4rem;
+    color: black;
+    margin: 7rem 15rem -24rem 48rem;
+    font-size: 2rem;
+    text-align: right;
 }
 
 
@@ -131,4 +149,26 @@
 .upcoming:hover{
     background-color: #05003b;
     color: white;
+}
+
+.EventsPage{
+    background-image: url("./eventsbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:55vh;
+    
+    display: flex;
+    margin: 18rem 1rem 1rem 14rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+.eventsBack{
+    font-size: 24rem;
+    color: #999999;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+
 }

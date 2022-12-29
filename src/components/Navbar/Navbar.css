@@ -6,7 +6,7 @@ li{
     align-items: center;
     justify-content: center;
     margin: 2rem 2rem 2rem 2rem;
-    position: static;
+ 
 }
     
 .nav_text{
@@ -16,9 +16,15 @@ li{
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    position: static;
+    /* position: fixed; */
+
     
 
+}
+
+.mainNav{
+    backdrop-filter:blur(4px);
+    position: fixed;
 }
 
 
@@ -27,10 +33,14 @@ li{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: rgba(0, 0, 0, 0.658);
+    margin: 1rem 1rem 0rem 25rem;
+    /* background-color: rgba(0, 0, 0, 0.658); */
     /* filter: blur(2px); */
-    position: static;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.658); */
+    /* filter: blur(2px); */
+   
 }
 
 .line{

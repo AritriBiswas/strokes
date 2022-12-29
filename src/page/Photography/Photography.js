@@ -1,4 +1,4 @@
-const record=[
+const photos=[
     {
         "id":1,
         "captions": "Icon1",
@@ -21,4 +21,4 @@ const record=[
         "icon":  "Assets/galleryCover"
     }
 ]
-export default record;
+export default photos;

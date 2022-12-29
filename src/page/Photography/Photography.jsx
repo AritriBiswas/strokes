@@ -18,7 +18,7 @@ export default function Gallery() {
     
 
      <div className='bg' data-aos="fade-right">
-     <h1 className='Covers'>Art Gallary</h1> 
+     <h1 className='Covers'>Photography</h1> 
      {/* <img className='galleryCover' src={image1}/> */}
      {/* <img className='man' src={image2}/> */}
 

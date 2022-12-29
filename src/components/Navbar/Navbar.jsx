@@ -5,7 +5,7 @@ import logo from "./strokes_logo.jpg"
 
 export default function Navbar() {
   return (
-    <div>
+    <div className='mainNav'>
       
       <ul className='navList'>
       <Link className='nav_text' id="logo" to="/">
@@ -29,6 +29,11 @@ export default function Navbar() {
               <li>
                   <Link className='nav_text' to="/OurAlumni">Our Alumni</Link>
               </li>
+
+              <li>
+                  <Link className='nav_text' to="/Photography">Photography</Link>
+              </li>
+
 
         
           </ul>

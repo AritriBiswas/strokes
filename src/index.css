@@ -1,4 +1,10 @@
 #root{
   margin: -16px -8px -8px -8px;
-  background-color:#631d61;
+  /* background-color:#631d61; */
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body{
+  margin:-8px;
 }
