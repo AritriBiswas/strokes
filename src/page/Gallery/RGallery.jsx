@@ -17,12 +17,9 @@ export default function Gallery() {
     <Navbar/>
     
 
-     <div className='bg' data-aos="fade-right">
-     <h1 className='Covers'>Art Gallary</h1> 
-     {/* <img className='galleryCover' src={image1}/> */}
-     {/* <img className='man' src={image2}/> */}
-
-</div>
+    <div className='bg' data-aos="fade-right">
+      <h1 className='Covers'>Art Gallary</h1> 
+    </div>
 
 <div className='display'>
   {

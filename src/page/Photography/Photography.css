@@ -1,0 +1,88 @@
+.bg-p{
+    display: flex;
+    background-image: url("./photogallerybg1.png");
+    height: 65vh;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.eye{
+    background-image: url("./eye.png");
+    height: 64vh;
+    width: 52vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 24rem;
+    color: #d8d8d8;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+
+}
+
+.bg-title{
+    margin: 3rem -70rem 0rem 38rem;
+
+    
+}
+
+.layout{
+    background-color: rgba(0, 0, 0, 0.531);
+    height: 47vh;
+    width: 137vh;
+    text-align: center;
+    /* font-size: 6rem;
+    margin: -9rem 8rem 3rem -30rem;
+    color:white; */
+}
+
+.title{
+    font-size: 6rem;
+    margin: -6rem -5rem -11rem 0rem;
+    color: white;
+}
+
+.display{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.P1{
+    max-height:30rem;
+}
+
+.P2{
+    max-height:30rem;
+}
+
+.P3{
+    max-height:30rem;
+}
+
+.P4{
+    max-height:30rem;
+}
+
+.P5{
+    max-height:30rem;
+}
+
+.P6{
+    max-height:50rem;
+}
+
+.P7{
+    max-height:20rem;
+}
+
+.P7{
+    max-height:20rem;
+}
+.P7{
+    max-height:20rem;
+}
+.P7{
+    max-height:20rem;
+}

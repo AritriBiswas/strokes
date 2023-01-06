@@ -1,39 +1,49 @@
-import React  from 'react';
-import photos from "./Photography";
+import React, {useEffect} from 'react';
 import Navbar from "../../components/Navbar/Navbar";
 import "./Photography.css";
-// import image1 from "./galleryCover.png";
-// import image2 from "./man.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Photos from "./Photos";
 
 export default function Photography() {
 
+    
+  useEffect(()=>{
+    AOS.init();
+  },[]);
 
   return (
+    
     <>
     <Navbar/>
-    
+      <div className='bg-p'>
+        <div className="eye" data-aos="fade-right" >
+          <div  className='bg-title' data-aos="fade-left" data-aos-duration="1000">Photos</div>
+        </div>
+        
+        <div className="layout">
+          <div className='title'>Photography</div>
+          <div className='title'>Gallery</div>
 
-     <div className='bg2' data-aos="fade-right">
-        <h1 className='Covers2'>Photography</h1> 
+        </div>
+      </div>
 
-
-    </div>
-
-<div className='dispaly2'>
-  {
-    photos.map( (photo) => {
-      const{icon,id} = photo;
-      return(
-        <div className='box2' >
-          <img className={id} src={icon} alt="card" />
-          <br/>
-          
-          </div>
-      )
-    })
-  }
-</div>
+      <div className='display'>
+        <div>
+          {
+            Photos && Photos.map( (record) => {
+              const{icon,id} = record;
+              return(
+                
+                  <img className={id} src={icon} alt="card" />
+                  
+                  
+                
+              )
+            })
+          }
+        </div>
+      </div>
     </>
   )
 }
